@@ -1,7 +1,7 @@
 Catatan Minggu 1
 
 ## Yang saya kerjakan
-Saya mengerjakan tiga contoh program sederhana menggunakan paradigma prosedural, OOP, dan fungsional, yaitu melengkapi kode yang masih TODO pada file "HelloProsedural.java", "HelloOOP.java", dan "HelloFungsional.java" lalu menjalankan tes untuk melihat hasil output.
+Pertama saya menginstall Maven, Java, dan Git (memastikan semuanya terpasang) lalu saya mengerjakan tiga contoh program sederhana menggunakan paradigma prosedural, OOP, dan fungsional, yaitu melengkapi kode yang ditunjukan oleh TO DO pada file "HelloProsedural.java", "HelloOOP.java" "HelloFungsional.java" dan dilanjutkan menjalankan tes untuk melihat hasil output.
 
 ## Keputusan Desain
 Untuk Program Prosedural, menggunakan statis sapa untuk menghasilkan sapaan menggunakan nama dan NIM.
@@ -26,7 +26,7 @@ Saya mengatasinya dengan memeriksa dan menjalankan tes kembali beberapa kali.
 ## Penggunaan AI
 - Alat yang dipakai: 
 
-   ChatGPT, Claude
+   ChatGPT, Claude.
 
 - Bagian yang dibantu AI:
 
@@ -36,11 +36,11 @@ Saya mengatasinya dengan memeriksa dan menjalankan tes kembali beberapa kali.
 
   Bagaimana cara mengatasi Maven yang tidak terdeteksi di terminal Windows?
 
-  Jelaskan tentang perbedaan paradigma prosedural, OOP, dan fungsional dalam program Java, beserta panduan uji.
+  Jelaskan tentang perbedaan paradigma prosedural, OOP, dan fungsional dalam program Java, beserta panduan uji tes.
 
 - Yang saya ubah atau tolak dari saran AI, dan alasannya: 
 
-  Tidak ada
+  Tidak ada.
 
 - Satu hal yang saya pahami lebih baik sekarang:
 
