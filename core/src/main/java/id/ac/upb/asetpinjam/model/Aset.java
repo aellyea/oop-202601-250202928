@@ -1,3 +1,4 @@
+
 package id.ac.upb.asetpinjam.model;
 
 import id.ac.upb.asetpinjam.kontrak.DapatDipinjam;
@@ -13,56 +14,108 @@ import id.ac.upb.asetpinjam.kontrak.DapatDipinjam;
  */
 public class Aset implements DapatDipinjam {
 
-    // TODO minggu 2: field private: kode, nama, status (default TERSEDIA), kondisi (default BAIK).
+    // Field private untuk menjaga encapsulation.
+    // Status default TERSEDIA dan kondisi default BAIK.
+    private String kode;
+    private String nama;
+    private StatusAset status = StatusAset.TERSEDIA;
+    private Kondisi kondisi = Kondisi.BAIK;
 
-    /** TODO minggu 2: kode dan nama tidak boleh null atau kosong (IllegalArgumentException). */
+    /**
+     * Konstruktor Aset.
+     * Kode dan nama tidak boleh null atau kosong.
+     */
     public Aset(String kode, String nama) {
-        throw new UnsupportedOperationException("TODO minggu 2: konstruktor Aset");
+        if (kode == null || kode.trim().isEmpty()) {
+            throw new IllegalArgumentException("Kode tidak boleh kosong");
+        }
+
+        if (nama == null || nama.trim().isEmpty()) {
+            throw new IllegalArgumentException("Nama tidak boleh kosong");
+        }
+
+        // Normalisasi kode dan nama dengan menghapus spasi di awal dan akhir.
+        this.kode = kode.trim();
+        this.nama = nama.trim();
     }
 
+    // Getter untuk mengambil kode aset.
     public String getKode() {
-        throw new UnsupportedOperationException("TODO minggu 2");
+        return kode;
     }
 
+    // Getter untuk mengambil nama aset.
     public String getNama() {
-        throw new UnsupportedOperationException("TODO minggu 2");
+        return nama;
     }
 
+    // Getter untuk mengambil status aset.
     public StatusAset getStatus() {
-        throw new UnsupportedOperationException("TODO minggu 2");
+        return status;
     }
 
+    // Getter untuk mengambil kondisi aset.
     public Kondisi getKondisi() {
-        throw new UnsupportedOperationException("TODO minggu 2");
+        return kondisi;
     }
 
-    /** TODO minggu 2: nama baru tidak boleh kosong. */
+    /**
+     * Mengubah nama aset.
+     * Nama baru tidak boleh null atau kosong.
+     */
     public void setNama(String nama) {
-        throw new UnsupportedOperationException("TODO minggu 2");
+        if (nama == null || nama.trim().isEmpty()) {
+            throw new IllegalArgumentException("Nama tidak boleh kosong");
+        }
+
+        this.nama = nama.trim();
     }
 
-    /** TODO minggu 2: status tidak boleh null. */
+    /**
+     * Mengubah status aset.
+     * Status tidak boleh null.
+     */
     public void setStatus(StatusAset status) {
-        throw new UnsupportedOperationException("TODO minggu 2");
+        if (status == null) {
+            throw new IllegalArgumentException("Status tidak boleh null");
+        }
+
+        this.status = status;
     }
 
-    /** TODO minggu 2: kondisi tidak boleh null. */
+    /**
+     * Mengubah kondisi aset.
+     * Kondisi tidak boleh null.
+     */
     public void setKondisi(Kondisi kondisi) {
-        throw new UnsupportedOperationException("TODO minggu 2");
+        if (kondisi == null) {
+            throw new IllegalArgumentException("Kondisi tidak boleh null");
+        }
+
+        this.kondisi = kondisi;
     }
 
-    /** TODO minggu 5: true hanya jika status TERSEDIA dan kondisi bukan RUSAK_BERAT. */
+    /**
+     * Minggu 5: true hanya jika status TERSEDIA
+     * dan kondisi bukan RUSAK_BERAT.
+     */
     @Override
     public boolean bisaDipinjam() {
         throw new UnsupportedOperationException("TODO minggu 5");
     }
 
-    /** TODO minggu 3: dioverride tiap subclass agar mengembalikan jenis yang benar. */
+    /**
+     * Minggu 3: dioverride tiap subclass agar
+     * mengembalikan jenis yang benar.
+     */
     public JenisAset getJenis() {
         throw new UnsupportedOperationException("TODO minggu 3");
     }
 
-    /** TODO minggu 4: denda keterlambatan. Dioverride tiap subclass (aturan di docs/aturan-bisnis.md). */
+    /**
+     * Minggu 4: denda keterlambatan.
+     * Dioverride tiap subclass sesuai aturan bisnis.
+     */
     public long hitungDenda(int hariTerlambat) {
         throw new UnsupportedOperationException("TODO minggu 4");
     }
