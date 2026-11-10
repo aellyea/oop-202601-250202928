@@ -1,5 +1,6 @@
 Catatan Minggu 1
 
+
 ## Yang saya kerjakan
 Pertama saya menginstall Maven, Java, dan Git (memastikan semuanya terpasang) lalu saya mengerjakan tiga contoh program sederhana menggunakan paradigma prosedural, OOP, dan fungsional, yaitu melengkapi kode yang masih TODO pada file "HelloProcedural.java", "HelloOOP.java", "HelloFungsional.java" dan dilanjutkan menjalankan tes untuk melihat hasil output.
 
