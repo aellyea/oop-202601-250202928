@@ -18,3 +18,5 @@ Saya sempat kesulitan memahami extends, super, @override saat membuat inheritenc
 - Yang saya ubah atau tolak dari saran AI, dan alasannya: Tidak ada
 - Satu hal yang saya pahami lebih baik sekarang:
 Saya jadi lebih memahami cara kerja inheritance dan bagaimana cara menggunakan atribut dan method dari kelas induk dengan extend, super, serta @override dan memahami semua yang tertera sesuai kebutuhan.
+
+
